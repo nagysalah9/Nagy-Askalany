@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+.content1 {
+  padding: 30px;
+	position: relative;
+}
+
+.content1 h2 {
+	color: #fff;
+	font-size: 3em;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.content1 h2:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 2px #03a9f4;
+}
+
+.content1 h2:nth-child(2) {
+	color: #03a9f4;
+	animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+
+
+header nav{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 12;
+}
+.navbar{
+  width: 90%;
+  display: flex;
+  margin: 20px auto 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+  header nav .logo{
+  height: 80px;
+  width: 150px;
+}
+.logo img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+nav .menu{
+  display: flex;
+}
+nav .menu li{
+  list-style: none;
+  margin: 0 10px;
+}
+nav .menu a{
+  color: #2c3e50;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+}
+nav .menu a:hover{
+  color: #000;
+}
+
+
+nav .search-box{
+  position: relative;
+  height: 40px;
+  width: 250px;
+}
+.search-box input[type="text"]{
+  position: absolute;
+  font-size: 18px;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  outline: none;
+  color: #2c3350;
+  border: 2px solid #2c3350;
+  background: #f2f2f2;
+  padding: 0 10px 0 40px;
+}
+.search-box a{
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  font-size: 20px;
+  color: #2c3350;
+  transform: translateY(-50%);
+  border-right: 2px solid #2c3350;
+  padding: 0 5px 0 0;
+}
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: arial;
+  font-size: 16px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.clr1 {
+  background: #FFFFFF;
+  color: #2c3350;
+}
+
+.clr2 {
+  background: #F1F3F5;
+  color: #2c3350;
+}
+
+.clr3 {
+  background: #2c3350;
+  color: #BDC3CF;
+}
+
+.clr4 {
+  background: #636A7D;
+  color: #E3E7F2;
+}
+
+.clr5 {
+  color: #F1F3F5;
+}
+
+.clr6 {
+  color: #39B5A1;
+}
+
+.clr7 {
+  color: #D45245;
+}
+
+a {
+  color: #BDC3CF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*##### Footer Structure #####*/
+.bo-wrap {
+  clear: both;
+  width: auto;
+}
+
+.bo-footer {
+  clear: both;
+  width: auto;
+  padding: 5px;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.bo-footer-social {
+  text-align: center;
+  line-height: 1px;
+}
+
+.bo-footer-smap {
+  width: 300px;
+  float: left;
+  padding: 5px 10px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.bo-footer-uonline {
+  width: 300px;
+  /* Account for margins + border values */
+  float: left;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.bo-footer-power {
+  width: 300px;
+  padding: 5px 10px;
+  float: left;
+  text-align: right;
+  font-size: 14px;
+  color: #636A7D;
+  vertical-align: middle;
+}
+
+.bo-footer-copyright {
+  text-align: center;
+  color: #BDC3CF
+}
+
+/*##### Footer Responsive #####*/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+
+  .bo-footer {
+      width: 95%;
+      padding: 1% 2%;
+  }
+
+  .bo-footer-smap {
+      width: 46%;
+      padding: 1% 2%;
+  }
+
+  .bo-footer-uonline {
+      width: 46%;
+      padding: 1% 2%;
+      float: right;
+      text-align: right;
+      
+      
+  }
+
+  .bo-footer-power {
+      clear: both;
+      padding: 1% 2%;
+      width: auto;
+      float: none;
+      text-align: center;
+      text-decoration: none;
+  }
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+  .bo-footer-smap {
+      width: auto;
+      float: none;
+      text-align: center;
+  }
+
+  .bo-footer-uonline {
+      width: auto;
+      float: none;
+      text-align: center;
+  }
+
+  .bo-footer-power {
+      width: auto;
+      float: none;
+      text-align: center;
+  }
+
+}  
+
